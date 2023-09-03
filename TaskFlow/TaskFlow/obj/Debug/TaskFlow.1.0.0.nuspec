@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TaskFlow</id>
+    <version>1.0.0</version>
+    <authors>TaskFlow</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\gabri\source\repos\TaskFlow\TaskFlow\bin\Debug\net6.0\TaskFlow.runtimeconfig.json" target="lib\net6.0\TaskFlow.runtimeconfig.json" />
+    <file src="C:\Users\gabri\source\repos\TaskFlow\TaskFlow\bin\Debug\net6.0\TaskFlow.dll" target="lib\net6.0\TaskFlow.dll" />
+  </files>
+</package>
