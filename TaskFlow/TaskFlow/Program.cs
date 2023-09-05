@@ -4,7 +4,7 @@ int escolha;
 bool running = true;
 int codigo = 0;
 Dictionary<int, string> tasks = new Dictionary<int, string>();
-string filePath = "C:\\Users\\gabri\\source\\repos\\TaskFlow\\newTaskFlow\\TaskFlow\\TaskFlow\\taskflow.txt";
+string filePath = "C:\\Users\\gabri\\source\\repos\\newTaskFlow\\TaskFlow\\TaskFlow\\taskflow.txt";
 
 void BoasVindas(String palavra) {
     int qtd_letras = palavra.Length;
@@ -149,13 +149,32 @@ void RemoverTarefas() {
     int codigoTarefa = int.Parse(Console.ReadLine()!);
 
 
-
+    
     if (tasks.ContainsKey(codigoTarefa)) {
         tasks.Remove(codigoTarefa);
+        try {
+            if (File.Exists(filePath)) {
+                StreamWriter escritor = new StreamWriter(filePath);
+
+                foreach (var valor in tasks) {
+                    escritor.WriteLine(tasks.Values);
+                }
+
+                for (int i = 0; i < tasks.LongCount; i++) {
+                    escritor.WriteLine(tasks[i]);
+                }
+                escritor.Close();
+            } else {
+                Console.WriteLine("Arquivo não existente! Verifique e tente novamente!");
+            }
+        } catch (Exception e) {
+            Console.WriteLine(e.Message);
+        }
         Console.WriteLine("Tarefa removida com sucesso !!!");
         Console.WriteLine("Aperte uma tecla para voltar ao menu principal");
         Console.ReadKey();
         Console.Clear();
+
     } else {
         Console.WriteLine("Não existe esse código !!!");
         Console.WriteLine("Aperte uma tecla para voltar ao menu principal");
@@ -163,9 +182,9 @@ void RemoverTarefas() {
         Console.Clear();
     }
 
+    
+
 }
-
-
 
 BoasVindas("Seja Bem Vindo ao TaskFlow !!!");
 while (running) {
