@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e6iLtP7wHsMoXQDI8d5ltKN9UQ/2sHljML0S+pjjnbJ/faE7/cVzBmC5b5dJ1juO093Go1+GTnY0ssAgn/+heA==",
+  "dgSpecHash": "iSLImniMFfXUx3hVLwXhBWPTxXICUy3wYyIEPsRbqClbEND4RQckxQa7L3rs/V93EuWXGYbCmQsRB99FyfMAcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabri\\source\\repos\\TaskFlow\\TaskFlow\\TaskFlow.csproj",
+  "projectFilePath": "C:\\Users\\gabri\\source\\repos\\TaskFlow\\newTaskFlow\\TaskFlow\\TaskFlow\\TaskFlow.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
