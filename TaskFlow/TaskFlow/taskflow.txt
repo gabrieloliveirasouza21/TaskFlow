@@ -1,0 +1,8 @@
+
+        
+            Título da tarefa : tetativa 1,
+            Descrição da tarefa : tentativa 1,
+            Status da tarefa : em andamento,
+            Data de criação da tarefa : 05/09/2023 18:40:13
+        
+        

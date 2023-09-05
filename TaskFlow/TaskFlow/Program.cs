@@ -1,8 +1,10 @@
-﻿int escolha;
+﻿using System.Security.AccessControl;
+
+int escolha;
 bool running = true;
 int codigo = 0;
 Dictionary<int, string> tasks = new Dictionary<int, string>();
-string filePath = "C:\\Users\\gabri\\source\\repos\\TaskFlow\\taskflow.txt";
+string filePath = "C:\\Users\\gabri\\source\\repos\\TaskFlow\\newTaskFlow\\TaskFlow\\TaskFlow\\taskflow.txt";
 
 void BoasVindas(String palavra) {
     int qtd_letras = palavra.Length;
@@ -46,6 +48,7 @@ void CriarTarefa() {
 
     try {
         if (File.Exists(filePath)) {
+
             StreamWriter escritor = new StreamWriter(filePath, true);
             escritor.WriteLine(tarefa.toString());
             escritor.Close();
